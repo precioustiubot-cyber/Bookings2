@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Your Class | Elevate English</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[Poppins] bg-gray-50 text-gray-800">
+  <!-- Header -->
+  <header class="bg-green-600 text-white py-4 shadow">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <h1 class="text-2xl font-bold">Elevate English</h1>
+      <nav class="space-x-6">
+        <a href="#booking" class="hover:underline">Book Class</a>
+        <a href="#about" class="hover:underline">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section id="hero" class="text-center py-16 bg-white shadow">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-green-700">Elevate Your English Fluency</h2>
+        <p class="mt-4 text-lg">Book a private, 25-minute class tailored to your needs. Let's start learning!</p>
+        <a href="#booking" class="mt-6 inline-block px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700">Schedule Now</a>
+      </div>
+    </section>
+
+    <!-- Booking -->
+    <section id="booking" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4 text-green-700">Book Your 25-Minute Class</h2>
+        <p class="mb-8 text-gray-600">Select a date and time that works best for you below.</p>
+
+        <!-- Calendly inline widget -->
+        <div class="calendly-inline-widget mx-auto"
+             data-url="https://calendly.com/precioustiubot/new-meeting"
+             style="min-width:320px; height:630px;">
+        </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-2xl font-bold mb-4 text-green-700">About Elevate English</h2>
+        <p class="mb-4">At Elevate English, we focus on dynamic, personalized 25-minute lessons designed to fit into your busy life.</p>
+        <p class="text-gray-700">Our goal is to build your confidence and fluency quickly through focused conversation and practical grammar application. We look forward to helping you achieve your English language goals!</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-green-600 text-white text-center py-4">
+    <p>&copy; 2025 Elevate English. All rights reserved.</p>
+  </footer>
+</body>
+</html>

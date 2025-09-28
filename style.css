@@ -1,0 +1,152 @@
+/* --- Global Styles and Reset --- */
+:root {
+    --primary-color: #2c3e50; /* Dark Blue/Navy for professionalism */
+    --secondary-color: #3498db; /* Bright Blue for accents/buttons */
+    --light-color: #ecf0f1; /* Off-white for background */
+    --dark-text: #2c3e50;
+    --white-text: #ffffff;
+    --max-width: 1100px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: var(--light-color);
+    color: var(--dark-text);
+}
+
+.container {
+    width: 90%;
+    max-width: var(--max-width);
+    margin: auto;
+    overflow: hidden;
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--primary-color);
+    color: var(--white-text);
+    padding: 1rem 0;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+header nav a {
+    color: var(--white-text);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: background 0.3s;
+}
+
+header nav a:hover {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* --- Buttons --- */
+.button {
+    display: inline-block;
+    background: var(--secondary-color);
+    color: var(--white-text);
+    padding: 12px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background: #2980b9; /* A slightly darker blue */
+}
+
+/* --- Sections --- */
+section {
+    padding: 60px 0;
+}
+
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('english-background-placeholder.jpg') no-repeat center center/cover;
+    color: var(--white-text);
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#booking, #about {
+    text-align: center;
+    background: var(--white-text);
+    border-bottom: 1px solid #ddd;
+}
+
+#booking h2, #about h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* --- Scheduling Widget Placeholder Styling --- */
+.scheduling-widget-placeholder {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px dashed var(--secondary-color);
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.scheduling-widget-placeholder strong {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+}
+
+/* Optional: Iframe styling to ensure it looks good */
+.scheduling-widget-placeholder iframe {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+/* --- Footer --- */
+footer {
+    background: var(--primary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 20px 0;
+}
