@@ -1,75 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Your Class | Elevate English</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Class | Elevate English</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for Tailwind */
+        .font-\[Poppins\] {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
 <body class="font-[Poppins] bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-green-600 text-white py-4 shadow">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <h1 class="text-2xl font-bold">Elevate English</h1>
-      <nav class="space-x-6">
-        <a href="#booking" class="hover:underline">Book Class</a>
-        <a href="#about" class="hover:underline">About</a>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero -->
-  <main>
-    <section id="hero" class="text-center py-16 bg-white shadow">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-green-700">Elevate Your English Fluency</h2>
-        <p class="mt-4 text-lg">Book a private, 25-minute class tailored to your needs. Let's start learning!</p>
-        <a href="#booking" class="mt-6 inline-block px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700">Schedule Now</a>
-      </div>
-    </section>
-
-    <!-- Booking -->
-    <section id="booking" class="py-16 bg-gray-100">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl font-bold mb-4 text-green-700">Book Your 25-Minute Class</h2>
-        <p class="mb-8 text-gray-600">Select a date and time that works best for you below.</p>
-
-        <!-- Calendly inline widget -->
-        <div class="calendly-inline-widget mx-auto"
-             data-url="https://calendly.com/precioustiubot/new-meeting"
-             style="min-width:320px; height:630px;">
+    <header class="bg-green-600 text-white py-4 shadow">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Elevate English</h1>
+            <nav class="space-x-6">
+                <a href="#booking" class="hover:underline">Book Class</a>
+                <a href="#about" class="hover:underline">About</a>
+            </nav>
         </div>
-        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      </div>
-    </section>
+    </header>
 
-    <!-- About -->
-    <section id="about" class="py-16 bg-white">
-      <div class="container mx-auto px-4 text-center">
-        <h2 class="text-2xl font-bold mb-6 text-green-700">About Me</h2>
+    <main>
+        <section id="hero" class="text-center py-16 bg-white shadow">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-green-700">Elevate Your English Fluency</h2>
+                <p class="mt-4 text-lg">Book a private, 25-minute class tailored to your needs. Let's start learning!</p>
+                <a href="#booking" class="mt-6 inline-block px-6 py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700">Schedule Now</a>
+            </div>
+        </section>
 
-        <!-- Profile photo -->
-        <img src="image.jpg" alt="Your Photo" class="mx-auto rounded-full w-40 h-40 object-cover shadow mb-6">
+        <section id="booking" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl font-bold mb-4 text-green-700">Book Your 25-Minute Class</h2>
+                <p class="mb-8 text-gray-600">Select a date and time that works best for you below.</p>
 
-        <!-- Self-introduction video -->
-        <video controls class="mx-auto rounded-lg shadow-lg w-full max-w-2xl">
-          <source src="Self intro video.mp4" type="video/mp4">
-          <source src="intro.webm" type="video/webm">
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </section>
-  </main>
+                <div class="calendly-inline-widget mx-auto"
+                    data-url="https://calendly.com/precioustiubot/new-meeting"
+                    style="min-width:320px; height:630px;">
+                </div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </section>
 
-  <!-- Footer -->
-  <footer class="bg-green-600 text-white text-center py-4">
-    <p>&copy; 2025 Elevate English. All rights reserved.</p>
-  </footer>
+        <section id="about" class="py-16 bg-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-2xl font-bold mb-6 text-green-700">About Me</h2>
+
+                <div class="flex flex-col items-center md:flex-row md:justify-center md:items-start md:space-x-8">
+                    <div class="w-full max-w-2xl mb-8 md:mb-0 md:order-1">
+                        <video controls class="mx-auto rounded-lg shadow-lg w-full">
+                            <source src="Self intro video.mp4" type="video/mp4">
+                            <source src="intro.webm" type="video/webm">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+
+                    <div class="w-full max-w-xs md:order-2 md:flex md:justify-end">
+                        <img src="image.jpg" alt="Your Photo" class="mx-auto rounded-full w-40 h-40 object-cover shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-green-600 text-white text-center py-4">
+        <p>&copy; 2025 Elevate English. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
-
